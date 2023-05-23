@@ -27,12 +27,12 @@ def binary_search(S, x):
     return -1
 
 def fibonacci_search(S, x):
-    # 初始化 Fibonacci 数列
+    # 初始化 Fibonacci 數列
     fib2, fib1 = 0, 1
     while fib1 <= len(S):
         fib2, fib1 = fib1, fib1 + fib2
 
-    # 执行搜索
+    # 執行搜索
     offset = -1
     while fib1 > 1:
         i = min(offset + fib2, len(S) - 1)
